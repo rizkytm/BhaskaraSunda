@@ -76,11 +76,11 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillCategoriesTable() {
-        Category c1 = new Category("Programming");
+        Category c1 = new Category("Bahasa Sunda");
         addCategory(c1);
-        Category c2 = new Category("Geography");
+        Category c2 = new Category("Aksara Sunda");
         addCategory(c2);
-        Category c3 = new Category("Math");
+        Category c3 = new Category("Terjemahan");
         addCategory(c3);
     }
 
@@ -91,29 +91,29 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("Programming, Mudah: A jawaban yang benar",
-                "A", "B", "C", "D", 1,
-                Question.DIFFICULTY_EASY, Category.PROGRAMMING);
+        Question q1 = new Question("Abdi nuju .... di ruang makan",
+                "Neda", "Tuang", "Nyatu", "Maca", 1,
+                Question.DIFFICULTY_EASY, Category.BAHASA_SUNDA);
         addQuestion(q1);
-        Question q2 = new Question("Geography, Sedang: B jawaban yang benar",
-                "A", "B", "C", "D", 2,
-                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+        Question q2 = new Question("Bapa nuju .... di kolam renang",
+                "Lumpat", "Maca", "Ngojay", "Sare", 3,
+                Question.DIFFICULTY_EASY, Category.BAHASA_SUNDA);
         addQuestion(q2);
-        Question q3 = new Question("Math, Sulit: C jawaban yang benar",
-                "A", "B", "C", "D", 3,
-                Question.DIFFICULTY_HARD, Category.MATH);
+        Question q3 = new Question("Terjemahkeun kalimah ieu\nᮃᮘ᮪ᮓᮤ ᮅᮛᮀ ᮞᮥᮔ᮪ᮓ",
+                "Abdi Urang Bandung", "Abdi Urang Jakarta", "Abdi Urang Jawa", "Abdi Urang Sunda", 4,
+                Question.DIFFICULTY_MEDIUM, Category.AKSARA_SUNDA);
         addQuestion(q3);
-        Question q4 = new Question("Math, Mudah: A jawaban yang benar",
-                "A", "B", "C", "D", 1,
-                Question.DIFFICULTY_EASY, Category.MATH);
+        Question q4 = new Question("Eusian titik-titik dina kalimah ieu\nᮃᮘ᮪ᮓᮤ ... ᮞᮥᮔ᮪ᮓ",
+                "ᮅᮒ", "ᮅᮛᮀ", "ᮅᮛ", "ᮅᮑ", 2,
+                Question.DIFFICULTY_MEDIUM, Category.AKSARA_SUNDA);
         addQuestion(q4);
-        Question q5 = new Question("Non existing, Mudah: A jawaban yang benar",
-                "A", "B", "C", "D", 1,
-                Question.DIFFICULTY_EASY, 4);
+        Question q5 = new Question("Terjemahkeun kalimah ieu ka Bahasa Indonesia\nAbdi nuju maca",
+                "Saya sedang membaca", "Saya sedang tidur", "Saya sedang berlari", "Saya sedang makan", 1,
+                Question.DIFFICULTY_HARD, Category.TERJEMAHAN);
         addQuestion(q5);
-        Question q6 = new Question("Non existing, Sedang: B jawaban yang benar",
-                "A", "B", "C", "D", 2,
-                Question.DIFFICULTY_MEDIUM, 5);
+        Question q6 = new Question("Terjemahkeun kalimah ieu ka Basa Sunda\nBapa nuju tuang",
+                "Bapak sedang minum", "Bapak sedang makan", "Bapak sedang tidur", "Bapak sedang mandi", 2,
+                Question.DIFFICULTY_HARD, Category.TERJEMAHAN);
         addQuestion(q6);
     }
 
